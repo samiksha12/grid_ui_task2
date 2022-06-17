@@ -1,0 +1,102 @@
+* {
+  font-family: sans-serif;
+}
+.container {
+  margin: auto;
+  width: 80%;
+}
+.single-price-container {
+  margin: auto;
+  width: 65%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "box1 box1"
+    "box2 box3";
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 8px 20px 0px rgb(0 0 0 / 33%);
+  box-shadow: 2px 8px 20px 0px rgb(0 0 0 / 33%);
+}
+
+.box1 {
+  grid-area: box1;
+  padding: 30px;
+}
+.box2 {
+  grid-area: box2;
+  padding: 40px 30px 10px 30px;
+  color: #f6fbff;
+  background-color: hsl(179, 62%, 43%);
+  border-radius: 0px 0px 0px 10px;
+}
+.box3 {
+  grid-area: box3;
+  padding: 40px 30px 10px 30px;
+  color: #f6fbff;
+  background-color: hsl(180, 56%, 50%);
+  border-radius: 0px 0px 10px 0px;
+}
+.box1 .header {
+  font-size: 25px;
+  font-weight: 600;
+  color: hsl(179, 62%, 43%);
+}
+.box1 .sub-header {
+  padding-top: 30px;
+  font-weight: 600;
+  color: hsl(71, 73%, 54%);
+}
+.box1 .content {
+  padding-top: 15px;
+  line-height: 1.5rem;
+  color: hsl(209, 24%, 76%);
+}
+.box2 .monthly-detail {
+  font-size: 20px;
+  font-weight: 600;
+}
+.box2 .price-tag {
+  padding-top: 30px;
+  height: 30px;
+}
+.box2 .price-tag .price {
+  font-size: 30px;
+  font-weight: 600;
+}
+.box2 .price-tag .price-per {
+  font-size: 15px;
+  position: relative;
+  top: -8px;
+  padding-left: 10px;
+}
+.box2 .pricing-detail {
+  padding-top: 15px;
+}
+.box2 .signin-btn {
+  padding: 30px;
+}
+.box2 .signin-btn button {
+  width: 100%;
+  padding: 10px 36px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  color: #f6fbff;
+  background-color: hsl(71, 73%, 54%);
+  -webkit-box-shadow: 7px 11px 20px -10px rgb(0 0 0 / 33%);
+  box-shadow: 7px 11px 20px -10px rgb(0 0 0 / 33%);
+}
+.box3 .why-us {
+  font-size: 20px;
+  font-weight: 600;
+}
+.box3 ul {
+  list-style: none;
+  padding-inline-start: 0px;
+  font-size: 13px;
+}
+.box3 li {
+  margin-top: 10px;
+}
